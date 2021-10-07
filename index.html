@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>FCC Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">F o r m u l a r i o</h1>
+            <p id="description" class="central-description">¡Gracias por tu tiempo!</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" for="name" class="form-control" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-email">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Ingresa tu email" required>
+            </div>
+            <div class="form-group">
+                <label for="edad" id="numero">Edad</label>
+                <input type="number" for="name" class="form-control" id="numero" min="15" max="90" placeholder="Edad">
+
+                <div class="form-group">
+                    <p>¿Cuál es tu ocupación?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                      <option disabled selected value>Selecciona una</option>
+                      <option value="student">Estudiante</option>
+                      <option value="job">Trabajo tiempo completo</option>
+                      <option value="student-job"> Estudio y trabajo </option>
+                      <option value="other">Otra</option>
+                    </select>
+                  </div>
+              
+                  <div class="form-group">
+                    <p>¿Te gustaría estudiar otra carrera? </p>
+                    <label>
+                      <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked
+                      />Sí
+                    </label>
+                    <label>
+                      <input
+                        name="user-recommend" value="maybe" type="radio" class="input-radio"/>Quizás</label>
+              
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>No</label>
+                  </div>
+              
+                  <div class="form-group">
+                    <p> ¿Qué áreas de estudio te interesan?</p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                      <option disabled selected value>Selecciona una opción</option>
+                      <option value="economia">Economía y finanzas</option>
+                      <option value="medicina">Medicina</option>
+                      <option value="tecnologia">Tecnología</option>
+                      <option value="psicologia">Psicología</option>
+                      <option value="otra">Otra area</option>
+                    </select>
+                  </div>
+              
+                  <div class="form-group">
+                    <p>
+                     Animales favoritos:
+                      <span class="clue">(Elige los que quieras)</span>
+                    </p>
+              
+                    <label
+                      ><input
+                        name="prefer"
+                        value="perros"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Perro</label
+                    >
+                    <label>
+                      <input
+                        name="prefer"
+                        value="gatos"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Gato</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="data-visualization"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Serpiente</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="challenges"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />León</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="open-source-community"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Loro</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="gitter-help-rooms"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Tigre</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="videos"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Jirafa</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="city-meetups"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Pantera</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="wiki"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Conejo</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="forum"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Oso</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="additional-courses"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Caballo</label
+                    >
+                  </div>
+              
+                  <div class="form-group">
+                    <p>Algún comentario o sugerencia</p>
+                    <textarea
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Ingrese su comentario..."
+                    ></textarea>
+                  </div>
+              
+                  <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+        </form>
+        </div>
+
+</body>
+
+</html>
